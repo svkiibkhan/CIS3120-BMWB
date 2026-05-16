@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68a17859b698fdd1d64c3f769eb74972 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_68a17859b698fdd1d64c3f769eb74972" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68a17859b698fdd1d64c3f769eb74972 = L.map(
+                "map_68a17859b698fdd1d64c3f769eb74972",
+                {
+                    center: [36.160440433333335, -91.7061023],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_298af80a19a8bbf56488a53b2cc8a99a = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_298af80a19a8bbf56488a53b2cc8a99a.addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var marker_addda6fa08b1fa0c4ac0c019f3648d36 = L.marker(
+                [39.9622601, -83.0007065],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_a917728a9618ac956648e104e7fbf047 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5851696b6f61f2f2c08837332db3f7d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0e978cfb6197e3d03bb8d3290e1809b = $(`<div id="html_c0e978cfb6197e3d03bb8d3290e1809b" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>PENN Entertainment, Inc.  (PENN)  (CIK 0000921738)</b><br><i>2026-04-23 — opening</i><br>Hollywood Columbus new hotel tower opening announced for June 2026.<br><a href='https://www.sec.gov/Archives/edgar/data/921738/000092173826000011/pennex991-q12026.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_5851696b6f61f2f2c08837332db3f7d8.setContent(html_c0e978cfb6197e3d03bb8d3290e1809b);
+            
+        
+
+        marker_addda6fa08b1fa0c4ac0c019f3648d36.bindPopup(popup_5851696b6f61f2f2c08837332db3f7d8)
+        ;
+
+        
+    
+    
+            marker_addda6fa08b1fa0c4ac0c019f3648d36.bindTooltip(
+                `<div>
+                     PENN Entertainment, Inc.  (PENN)  (CIK 0000921738)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_addda6fa08b1fa0c4ac0c019f3648d36.setIcon(icon_a917728a9618ac956648e104e7fbf047);
+            
+    
+            var marker_b94bff0f2ca99d89ba2e15e3de598947 = L.marker(
+                [39.9622601, -83.0007065],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_117d6674903ce2008908dddae48880eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24c4128da216de5a0147b8bdea4e85d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73be3344f8d88937f00c8e4e0787fb1c = $(`<div id="html_73be3344f8d88937f00c8e4e0787fb1c" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>PENN Entertainment, Inc.  (PENN)  (CIK 0000921738)</b><br><i>2026-04-23 — opening</i><br>Hollywood Columbus new hotel tower opening announced for June 2026.<br><a href='https://www.sec.gov/Archives/edgar/data/921738/000092173826000011/pennex991-q12026.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_24c4128da216de5a0147b8bdea4e85d6.setContent(html_73be3344f8d88937f00c8e4e0787fb1c);
+            
+        
+
+        marker_b94bff0f2ca99d89ba2e15e3de598947.bindPopup(popup_24c4128da216de5a0147b8bdea4e85d6)
+        ;
+
+        
+    
+    
+            marker_b94bff0f2ca99d89ba2e15e3de598947.bindTooltip(
+                `<div>
+                     PENN Entertainment, Inc.  (PENN)  (CIK 0000921738)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b94bff0f2ca99d89ba2e15e3de598947.setIcon(icon_117d6674903ce2008908dddae48880eb);
+            
+    
+            var marker_ab04e2498e65cde29ca4265d62be2dfd = L.marker(
+                [40.4848003, -106.831735],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_897d61c400f4754a5a18b9647a042323 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7ec3a54217836505769e5ee825f5e27 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f105b909c38d4ec617adb1733df2263 = $(`<div id="html_0f105b909c38d4ec617adb1733df2263" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>CaliberCos Inc.  (CWD)  (CIK 0001627282)</b><br><i>2026-04-23 — opening</i><br>Caliber announces Hyatt Studios hotel development in Steamboat Springs, expected to open Q3/Q4 2027.<br><a href='https://www.sec.gov/Archives/edgar/data/1627282/000162728226000025/ex_991xhyattstudiosdevelop.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_a7ec3a54217836505769e5ee825f5e27.setContent(html_0f105b909c38d4ec617adb1733df2263);
+            
+        
+
+        marker_ab04e2498e65cde29ca4265d62be2dfd.bindPopup(popup_a7ec3a54217836505769e5ee825f5e27)
+        ;
+
+        
+    
+    
+            marker_ab04e2498e65cde29ca4265d62be2dfd.bindTooltip(
+                `<div>
+                     CaliberCos Inc.  (CWD)  (CIK 0001627282)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab04e2498e65cde29ca4265d62be2dfd.setIcon(icon_897d61c400f4754a5a18b9647a042323);
+            
+    
+            var marker_43e8008fc0b20ee61f8481d1cd8ea043 = L.marker(
+                [32.753177, -97.3327459],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_80a1b763078ce663f11d6bd53ca452c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7b031d5d54b3269486b5cb8271b8a81 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_592750cb190e898eba22ca58c16e2256 = $(`<div id="html_592750cb190e898eba22ca58c16e2256" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>Portillo's Inc.  (PTLO)  (CIK 0001871509)</b><br><i>2026-05-05 — opening</i><br>Portillo's opened new restaurant locations in Fort Worth, Humble, El Paso, North Dallas, and Frisco, Texas.<br><a href='https://www.sec.gov/Archives/edgar/data/1871509/000187150926000032/exhibit992ptloq12026earn.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_f7b031d5d54b3269486b5cb8271b8a81.setContent(html_592750cb190e898eba22ca58c16e2256);
+            
+        
+
+        marker_43e8008fc0b20ee61f8481d1cd8ea043.bindPopup(popup_f7b031d5d54b3269486b5cb8271b8a81)
+        ;
+
+        
+    
+    
+            marker_43e8008fc0b20ee61f8481d1cd8ea043.bindTooltip(
+                `<div>
+                     Portillo's Inc.  (PTLO)  (CIK 0001871509)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43e8008fc0b20ee61f8481d1cd8ea043.setIcon(icon_80a1b763078ce663f11d6bd53ca452c0);
+            
+    
+            var marker_591e3400a8d7abbcaafea48e5996076e = L.marker(
+                [32.753177, -97.3327459],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_caa2f3485ae224e561d48028c7346a1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c393bd901a6b97258043978997e3a707 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb3aa5308aa1084e76291df894d97943 = $(`<div id="html_cb3aa5308aa1084e76291df894d97943" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>Portillo's Inc.  (PTLO)  (CIK 0001871509)</b><br><i>2026-05-05 — opening</i><br>Portillo's opened restaurants in Fort Worth, Humble, Dallas, El Paso, and Frisco, Texas during Q1 2026.<br><a href='https://www.sec.gov/Archives/edgar/data/1871509/000187150926000032/exhibit991earningsrelease3.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_c393bd901a6b97258043978997e3a707.setContent(html_cb3aa5308aa1084e76291df894d97943);
+            
+        
+
+        marker_591e3400a8d7abbcaafea48e5996076e.bindPopup(popup_c393bd901a6b97258043978997e3a707)
+        ;
+
+        
+    
+    
+            marker_591e3400a8d7abbcaafea48e5996076e.bindTooltip(
+                `<div>
+                     Portillo's Inc.  (PTLO)  (CIK 0001871509)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_591e3400a8d7abbcaafea48e5996076e.setIcon(icon_caa2f3485ae224e561d48028c7346a1e);
+            
+    
+            var marker_8d2383a6d46220fe5c6ee1199bd2fee6 = L.marker(
+                [40.5598127, -74.5517146],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_3e76d06fd9c48233fc5e8210dcecceca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b3bae55390224ecd5daffd7d603305c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58ceac1d1726e58a3a96f530354979f2 = $(`<div id="html_58ceac1d1726e58a3a96f530354979f2" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>Urban Edge Properties  (UE)  (CIK 0001611547)</b><br><i>2026-04-29 — opening</i><br>Urban Edge Properties acquired The Village at Bridgewater Commons shopping center for $54.3 million on March 30, 2026.<br><a href='https://www.sec.gov/Archives/edgar/data/1611547/000161154726000038/exhibit992-supplementaldis.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_5b3bae55390224ecd5daffd7d603305c.setContent(html_58ceac1d1726e58a3a96f530354979f2);
+            
+        
+
+        marker_8d2383a6d46220fe5c6ee1199bd2fee6.bindPopup(popup_5b3bae55390224ecd5daffd7d603305c)
+        ;
+
+        
+    
+    
+            marker_8d2383a6d46220fe5c6ee1199bd2fee6.bindTooltip(
+                `<div>
+                     Urban Edge Properties  (UE)  (CIK 0001611547)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8d2383a6d46220fe5c6ee1199bd2fee6.setIcon(icon_3e76d06fd9c48233fc5e8210dcecceca);
+            
+    
+            var marker_604c1da6f7d46f50dbb587910774b932 = L.marker(
+                [30.4494155, -91.1869659],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_65cf601f1be9f3978b6b12b8a08a50ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9df9be344a4bc32751018de5ac1556d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b08ee55e3c80f0f260145f53a6528b2 = $(`<div id="html_9b08ee55e3c80f0f260145f53a6528b2" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>Travel & Leisure Co.  (TNL)  (CIK 0001361658)</b><br><i>2026-04-22 — opening</i><br>Sports Illustrated Resorts announced fourth location opening in Baton Rouge, Louisiana.<br><a href='https://www.sec.gov/Archives/edgar/data/1361658/000136165826000024/tnl1q26earningsrelease.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_9df9be344a4bc32751018de5ac1556d1.setContent(html_9b08ee55e3c80f0f260145f53a6528b2);
+            
+        
+
+        marker_604c1da6f7d46f50dbb587910774b932.bindPopup(popup_9df9be344a4bc32751018de5ac1556d1)
+        ;
+
+        
+    
+    
+            marker_604c1da6f7d46f50dbb587910774b932.bindTooltip(
+                `<div>
+                     Travel & Leisure Co.  (TNL)  (CIK 0001361658)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_604c1da6f7d46f50dbb587910774b932.setIcon(icon_65cf601f1be9f3978b6b12b8a08a50ad);
+            
+    
+            tile_layer_298af80a19a8bbf56488a53b2cc8a99a.addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+                marker_addda6fa08b1fa0c4ac0c019f3648d36.setIcon(icon_a917728a9618ac956648e104e7fbf047);
+            
+    
+                marker_b94bff0f2ca99d89ba2e15e3de598947.setIcon(icon_117d6674903ce2008908dddae48880eb);
+            
+    
+                marker_ab04e2498e65cde29ca4265d62be2dfd.setIcon(icon_897d61c400f4754a5a18b9647a042323);
+            
+    
+                marker_43e8008fc0b20ee61f8481d1cd8ea043.setIcon(icon_80a1b763078ce663f11d6bd53ca452c0);
+            
+    
+                marker_591e3400a8d7abbcaafea48e5996076e.setIcon(icon_caa2f3485ae224e561d48028c7346a1e);
+            
+    
+                marker_8d2383a6d46220fe5c6ee1199bd2fee6.setIcon(icon_3e76d06fd9c48233fc5e8210dcecceca);
+            
+    
+                marker_604c1da6f7d46f50dbb587910774b932.setIcon(icon_65cf601f1be9f3978b6b12b8a08a50ad);
+            
+    
+            var marker_d9c1933bfa865c2ac97372c298553e73 = L.marker(
+                [39.9622601, -83.0007065],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_176e8c0e36c57a87cd7c4d29d9fce0c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_304a0a5f92394a971ba86178bb21dd5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_182f4b6cbc51e5baeb634192935f0f67 = $(`<div id="html_182f4b6cbc51e5baeb634192935f0f67" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>PENN Entertainment, Inc.  (PENN)  (CIK 0000921738)</b><br><i>2026-04-23 — opening</i><br>Hollywood Columbus new hotel tower opening announced for June 2026.<br><a href='https://www.sec.gov/Archives/edgar/data/921738/000092173826000011/pennex991-q12026.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_304a0a5f92394a971ba86178bb21dd5d.setContent(html_182f4b6cbc51e5baeb634192935f0f67);
+            
+        
+
+        marker_d9c1933bfa865c2ac97372c298553e73.bindPopup(popup_304a0a5f92394a971ba86178bb21dd5d)
+        ;
+
+        
+    
+    
+            marker_d9c1933bfa865c2ac97372c298553e73.bindTooltip(
+                `<div>
+                     PENN Entertainment, Inc.  (PENN)  (CIK 0000921738)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d9c1933bfa865c2ac97372c298553e73.setIcon(icon_176e8c0e36c57a87cd7c4d29d9fce0c3);
+            
+    
+            var marker_3b11fc14140f0d1316eff14b657ef544 = L.marker(
+                [40.4848003, -106.831735],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_a032e1f1fbda62198260452cd9e6f25a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f49e9d6c59cba362859bc7d2d7e41d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_243a0d242b9b2e8fceadcf84c91084f4 = $(`<div id="html_243a0d242b9b2e8fceadcf84c91084f4" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>CaliberCos Inc.  (CWD)  (CIK 0001627282)</b><br><i>2026-04-23 — opening</i><br>Caliber announces Hyatt Studios hotel development in Steamboat Springs, expected to open Q3/Q4 2027.<br><a href='https://www.sec.gov/Archives/edgar/data/1627282/000162728226000025/ex_991xhyattstudiosdevelop.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_2f49e9d6c59cba362859bc7d2d7e41d2.setContent(html_243a0d242b9b2e8fceadcf84c91084f4);
+            
+        
+
+        marker_3b11fc14140f0d1316eff14b657ef544.bindPopup(popup_2f49e9d6c59cba362859bc7d2d7e41d2)
+        ;
+
+        
+    
+    
+            marker_3b11fc14140f0d1316eff14b657ef544.bindTooltip(
+                `<div>
+                     CaliberCos Inc.  (CWD)  (CIK 0001627282)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3b11fc14140f0d1316eff14b657ef544.setIcon(icon_a032e1f1fbda62198260452cd9e6f25a);
+            
+    
+            var marker_892cac7557a6f95c3eaeef80d30a4f7a = L.marker(
+                [32.753177, -97.3327459],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_a24364802af03b1915376304247e34f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1c17c687cb839a867da8346cff365af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6fa17ab0ac6c2ab87ba5d5435b475268 = $(`<div id="html_6fa17ab0ac6c2ab87ba5d5435b475268" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>Portillo's Inc.  (PTLO)  (CIK 0001871509)</b><br><i>2026-05-05 — opening</i><br>Portillo's opened new restaurant locations in Fort Worth, Humble, El Paso, North Dallas, and Frisco, Texas.<br><a href='https://www.sec.gov/Archives/edgar/data/1871509/000187150926000032/exhibit992ptloq12026earn.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_e1c17c687cb839a867da8346cff365af.setContent(html_6fa17ab0ac6c2ab87ba5d5435b475268);
+            
+        
+
+        marker_892cac7557a6f95c3eaeef80d30a4f7a.bindPopup(popup_e1c17c687cb839a867da8346cff365af)
+        ;
+
+        
+    
+    
+            marker_892cac7557a6f95c3eaeef80d30a4f7a.bindTooltip(
+                `<div>
+                     Portillo's Inc.  (PTLO)  (CIK 0001871509)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_892cac7557a6f95c3eaeef80d30a4f7a.setIcon(icon_a24364802af03b1915376304247e34f0);
+            
+    
+            var marker_739c989338cc7658c4da0222cc2bb3e7 = L.marker(
+                [32.753177, -97.3327459],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_06539de9a35adee0500157a26d9ef7f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8d2e09938da7933129313407b738bcc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa0cfa72953bd6a72e78c5ba284564c3 = $(`<div id="html_fa0cfa72953bd6a72e78c5ba284564c3" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>Portillo's Inc.  (PTLO)  (CIK 0001871509)</b><br><i>2026-05-05 — opening</i><br>Portillo's opened restaurants in Fort Worth, Humble, Dallas, El Paso, and Frisco, Texas during Q1 2026.<br><a href='https://www.sec.gov/Archives/edgar/data/1871509/000187150926000032/exhibit991earningsrelease3.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_e8d2e09938da7933129313407b738bcc.setContent(html_fa0cfa72953bd6a72e78c5ba284564c3);
+            
+        
+
+        marker_739c989338cc7658c4da0222cc2bb3e7.bindPopup(popup_e8d2e09938da7933129313407b738bcc)
+        ;
+
+        
+    
+    
+            marker_739c989338cc7658c4da0222cc2bb3e7.bindTooltip(
+                `<div>
+                     Portillo's Inc.  (PTLO)  (CIK 0001871509)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_739c989338cc7658c4da0222cc2bb3e7.setIcon(icon_06539de9a35adee0500157a26d9ef7f1);
+            
+    
+            var marker_7734df52c42005a17383e3a1b4c77e03 = L.marker(
+                [40.5598127, -74.5517146],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_4a59df91838fa1781bc55cb629a7d539 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b99b09b9422d57b98fdec903534a2df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_941f1c58231fbcedb30b408499c9fc75 = $(`<div id="html_941f1c58231fbcedb30b408499c9fc75" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>Urban Edge Properties  (UE)  (CIK 0001611547)</b><br><i>2026-04-29 — opening</i><br>Urban Edge Properties acquired The Village at Bridgewater Commons shopping center for $54.3 million on March 30, 2026.<br><a href='https://www.sec.gov/Archives/edgar/data/1611547/000161154726000038/exhibit992-supplementaldis.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_1b99b09b9422d57b98fdec903534a2df.setContent(html_941f1c58231fbcedb30b408499c9fc75);
+            
+        
+
+        marker_7734df52c42005a17383e3a1b4c77e03.bindPopup(popup_1b99b09b9422d57b98fdec903534a2df)
+        ;
+
+        
+    
+    
+            marker_7734df52c42005a17383e3a1b4c77e03.bindTooltip(
+                `<div>
+                     Urban Edge Properties  (UE)  (CIK 0001611547)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7734df52c42005a17383e3a1b4c77e03.setIcon(icon_4a59df91838fa1781bc55cb629a7d539);
+            
+    
+            var marker_65a393c8a75762604eb08dd24c0c1c04 = L.marker(
+                [30.4494155, -91.1869659],
+                {
+}
+            ).addTo(map_68a17859b698fdd1d64c3f769eb74972);
+        
+    
+            var icon_c97e7a28d4a427a8d0e73ab5ea26bc8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1c7fcd87d1f797ca33c2b02274e0037 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b530f97e30334becf7fac50ef6e6d6db = $(`<div id="html_b530f97e30334becf7fac50ef6e6d6db" style="width: 100.0%; height: 100.0%;"><div style='width:260px'><b>Travel & Leisure Co.  (TNL)  (CIK 0001361658)</b><br><i>2026-04-22 — opening</i><br>Sports Illustrated Resorts announced fourth location opening in Baton Rouge, Louisiana.<br><a href='https://www.sec.gov/Archives/edgar/data/1361658/000136165826000024/tnl1q26earningsrelease.htm' target='_blank'>View SEC filing</a></div></div>`)[0];
+                popup_d1c7fcd87d1f797ca33c2b02274e0037.setContent(html_b530f97e30334becf7fac50ef6e6d6db);
+            
+        
+
+        marker_65a393c8a75762604eb08dd24c0c1c04.bindPopup(popup_d1c7fcd87d1f797ca33c2b02274e0037)
+        ;
+
+        
+    
+    
+            marker_65a393c8a75762604eb08dd24c0c1c04.bindTooltip(
+                `<div>
+                     Travel & Leisure Co.  (TNL)  (CIK 0001361658)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65a393c8a75762604eb08dd24c0c1c04.setIcon(icon_c97e7a28d4a427a8d0e73ab5ea26bc8e);
+            
+</script>
+</html>
